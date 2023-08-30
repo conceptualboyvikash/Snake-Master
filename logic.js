@@ -136,7 +136,7 @@ function main(ctime) {
     }
     // alert("hellow");
     lastpaint = ctime;
-    console.log( speed+(increase));
+    //console.log( speed+(increase));
     gameEngine();
 
 }
