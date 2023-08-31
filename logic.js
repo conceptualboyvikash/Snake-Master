@@ -11,6 +11,10 @@ let increase=0;
 let board = document.getElementsByClassName("board")[0];
 let scoreBoard=document.getElementById("scoreboard");
 let highscoreBoard=document.getElementById("highscore");
+let left=document.getElementById("left");
+let right=document.getElementById("right");
+let topi=document.getElementById("top");
+let bottom=document.getElementById("bottom");
 let inputdir={x:0,y:0};
  foodpos = { x: 12, y: 2 };
 
@@ -146,6 +150,25 @@ function main(ctime) {
 
 window.requestAnimationFrame(main);
 
+left.addEventListener("click",()=>{
+    inputdir={x:-1,y:0};
+
+});
+
+right.addEventListener("click",()=>{
+    inputdir={x:1,y:0};
+
+});
+
+topi.addEventListener("click",()=>{
+    inputdir={x:0,y:-1};
+
+});
+
+bottom.addEventListener("click",()=>{
+    inputdir={x:0,y:1};
+
+});
 window.addEventListener("keydown", e => {
      inputdir = { x: 0, y: 0 };
 
