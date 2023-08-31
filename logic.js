@@ -1,8 +1,8 @@
 // Defining constant
-const foodSound = new Audio("./food.mp3");
-const gameoverSound = new Audio("./gameover.mp3");
-const moveSound = new Audio("./move.mp3");
-const musicSound = new Audio("./music.mp3");
+const foodSound = new Audio("food.mp3");
+const gameoverSound = new Audio("gameover.mp3");
+const moveSound = new Audio("move.mp3");
+const musicSound = new Audio("music.mp3");
 let lastpaint = 0;
 let snakepos = [{x:12, y:10}];
 let scoreValue = 0;
